@@ -74,13 +74,6 @@ def encode_image(img):
         feature_vector = feature_vector.reshape(1, feature_vector.shape[1])
         return feature_vector
 
-
-# In[ ]:
-
-
-
-
-
 # In[25]:
 
 
@@ -89,18 +82,6 @@ with open("./storage/word_to_idx.pkl", 'rb') as w2i:
     
 with open("./storage/idx_to_word.pkl", 'rb') as i2w:
     idx_to_word = pickle.load(i2w)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
 
 # In[28]:
@@ -132,7 +113,6 @@ def predict_caption(photo):
     
         return final_caption
 
-
 # In[29]:
 
 
@@ -142,10 +122,3 @@ def caption_this_image(image):
     caption = predict_caption(enc)
     
     return caption
-
-
-# In[ ]:
-
-
-
-
